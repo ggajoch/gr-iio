@@ -26,7 +26,7 @@
 #include <vector>
 
 #include <iio.h>
-#include <boost/thread.hpp>
+#include <thread>
 #include <iio/device_source.h>
 
 namespace gr {
@@ -51,7 +51,7 @@ namespace gr {
 	     volatile bool please_refill_buffer, thread_stopped;
 	     pmt::pmt_t port_id;
 
-	     boost::thread refill_thd;
+	     std::thread refill_thd;
 
 	     unsigned long timeout;
 

@@ -5,7 +5,7 @@
 
 BOOST_PACKAGES_BASE="libboost libboost-regex libboost-date-time
 	libboost-program-options libboost-test libboost-filesystem
-	libboost-system libboost-thread"
+	libboost-system"
 
 handle_centos() {
 	# First EPEL stuff
